@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpreadsheetConsole</name>
+    </assembly>
+    <members>
+        <member name="T:SpreadsheetConsole.Demo">
+            <summary>
+            The demo functionality.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetConsole.Demo.Run">
+            <summary>
+            Runs the demo.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetConsole.Demo.PrintMenu">
+            <summary>
+            Prints the menu.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetConsole.Demo.SetExpression">
+            <summary>
+            Sets a new expression.
+            </summary>
+            <returns>
+            An ExpressionTree object.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetConsole.Demo.SetVariable(System.String@,System.Double@)">
+            <summary>
+            Sets a variable.
+            </summary>
+            <param name="name">
+            Reference to name defined in run.
+            </param>
+            <param name="value">
+            Reference to value defined in run.
+            </param>
+            <returns>
+            If the value was successfully set.
+            </returns>
+        </member>
+        <member name="T:SpreadsheetConsole.Program">
+            <summary>
+            Contains the main program.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetConsole.Program.Main(System.String[])">
+            <summary>
+            The main function.
+            </summary>
+            <param name="args">
+            The default main input.
+            </param>
+        </member>
+    </members>
+</doc>

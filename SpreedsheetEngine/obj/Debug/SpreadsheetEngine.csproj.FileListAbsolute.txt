@@ -1,0 +1,7 @@
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\bin\Debug\SpreedsheetEngine.xml
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\bin\Debug\SpreedsheetEngine.dll
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\bin\Debug\SpreedsheetEngine.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\obj\Debug\SpreadsheetEngine.csproj.CoreCompileInputs.cache
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\obj\Debug\SpreedsheetEngine.dll
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\obj\Debug\SpreedsheetEngine.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreedsheetEngine\obj\Debug\SpreadsheetEngine.csproj.AssemblyReference.cache

@@ -1,0 +1,15 @@
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\Spreadsheet_Benjamin_Hoover.exe.config
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\Spreadsheet_Benjamin_Hoover.exe
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\Spreadsheet_Benjamin_Hoover.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.FormMain.resources
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.Properties.Resources.resources
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.csproj.GenerateResource.cache
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.csproj.CoreCompileInputs.cache
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.exe
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\Spreadsheet_Benjamin_Hoover.xml
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\SpreedsheetEngine.dll
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\SpreedsheetEngine.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.csproj.CopyComplete
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\bin\Debug\SpreedsheetEngine.xml
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\Spreadsheet_Benjamin_Hoover\obj\Debug\Spreadsheet_Benjamin_Hoover.csproj.AssemblyReference.cache

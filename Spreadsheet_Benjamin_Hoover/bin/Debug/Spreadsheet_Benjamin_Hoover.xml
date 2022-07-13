@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Spreadsheet_Benjamin_Hoover</name>
+    </assembly>
+    <members>
+        <member name="T:Spreadsheet_Benjamin_Hoover.FormMain">
+            <summary>
+            Main Form object.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Spreadsheet_Benjamin_Hoover.FormMain"/> class.
+            Initialize FormMain.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.MakeGrid">
+            <summary>
+            Initializes the rows and columns of dataGridMain.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.CellPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Called when a property changed in SpreadSheetCell.
+            </summary>
+            <param name="sender">
+            The sender object.
+            </param>
+            <param name="e">
+            The property that changed.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.UpdateCell(System.String,System.Int32,System.Int32,System.UInt32)">
+            <summary>
+            Update the cell in the dataGridMain.
+            </summary>
+            <param name="newValue">
+            The new value of the cell.
+            </param>
+            <param name="rowIndex">
+            The row of the cell.
+            </param>
+            <param name="columnIndex">
+            The column of the cell.
+            </param>
+            <param name="newBGColor">
+            The background of the cell.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.UpdateUndoText">
+            <summary>
+            Updates the undo button text.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.UpdateRedoText">
+            <summary>
+            Updates the redo button text.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.DataGridMain_CellBeginEdit(System.Object,System.Windows.Forms.DataGridViewCellCancelEventArgs)">
+            <summary>
+            When the user begins editing a cell.
+            </summary>
+            <param name="sender">
+            The sender cell.
+            </param>
+            <param name="e">
+            The event called.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.DataGridMain_CellEndEdit(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            When the user stops editing a cell.
+            </summary>
+            <param name="sender">
+            The sender cell.
+            </param>
+            <param name="e">
+            The event called.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.ButtonDemo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handels the demo button features.
+            </summary>
+            <param name="sender">
+            The button object.
+            </param>
+            <param name="e">
+            The event click.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.DataGridMain_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            When a user clicks on the content of a cell.
+            </summary>
+            <param name="sender">
+            The sender cell.
+            </param>
+            <param name="e">
+            The event of clicking on a cell.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.ChangeColorMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Clicking on the "Change background color..." option.
+            </summary>
+            <param name="sender">
+            The menu item.
+            </param>
+            <param name="e">
+            The click event.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.UndoMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Clicking on the "Undo" menu option under Edit.
+            </summary>
+            <param name="sender">
+            The menu item.
+            </param>
+            <param name="e">
+            The clicking event.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.RedoMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            The "Redo" menu item click event under Edit.
+            </summary>
+            <param name="sender">
+            The menu item.
+            </param>
+            <param name="e">
+            The clicking event.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.SaveMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the saving mechanic.
+            </summary>
+            <param name="sender">
+            The menu item.
+            </param>
+            <param name="e">
+            The clicking event.
+            </param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.LoadMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Handles the loading mechanic.
+            </summary>
+            <param name="sender">
+            The menu button.
+            </param>
+            <param name="e">
+            The clicking event.
+            </param>
+        </member>
+        <member name="F:Spreadsheet_Benjamin_Hoover.FormMain.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.FormMain.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Spreadsheet_Benjamin_Hoover.Program">
+            <summary>
+            Contains the main function.
+            </summary>
+        </member>
+        <member name="M:Spreadsheet_Benjamin_Hoover.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Spreadsheet_Benjamin_Hoover.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Spreadsheet_Benjamin_Hoover.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Spreadsheet_Benjamin_Hoover.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

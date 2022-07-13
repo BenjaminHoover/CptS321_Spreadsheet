@@ -1,0 +1,12 @@
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreadsheetConsole.exe.config
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreadsheetConsole.exe
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreadsheetConsole.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreedsheetEngine.dll
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreedsheetEngine.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreedsheetEngine.xml
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\obj\Debug\SpreadsheetConsole.csprojAssemblyReference.cache
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\obj\Debug\SpreadsheetConsole.csproj.CoreCompileInputs.cache
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\obj\Debug\SpreadsheetConsole.csproj.CopyComplete
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\obj\Debug\SpreadsheetConsole.exe
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\obj\Debug\SpreadsheetConsole.pdb
+C:\Users\benho\Desktop\Megafolder\WSU_Spring_2021\CptS 321\cpts321-hws\Spreadsheet_Benjamin_Hoover\SpreadsheetConsole\bin\Debug\SpreadsheetConsole.xml

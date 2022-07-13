@@ -1,0 +1,851 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpreedsheetEngine</name>
+    </assembly>
+    <members>
+        <member name="T:SpreadsheetEngine.BGColorChangeCommand">
+            <summary>
+            Implementation for BGColor changing command.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.BGColorChangeCommand.SetAttributes(SpreadsheetEngine.Spreadsheet@,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Set attributes.
+            </summary>
+            <param name="spreadsheet">
+            Reference to the spreadsheet.
+            </param>
+            <param name="newColor">
+            New text for the cell.
+            </param>
+            <param name="prevColor">
+            Old text of the cell.
+            </param>
+            <param name="rowNum">
+            Row index.
+            </param>
+            <param name="columnNum">
+            Column index.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.BGColorChangeCommand.GetCommandName">
+            <summary>
+            Gets the command name.
+            </summary>
+            <returns>
+            The command name.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.BGColorChangeCommand.Execute">
+            <summary>
+            Executes the change.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.BGColorChangeCommand.UnExecute">
+            <summary>
+            Undos the change.
+            </summary>
+        </member>
+        <member name="T:SpreadsheetEngine.ICommand">
+            <summary>
+            Interface for commands.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.ICommand.SetAttributes(SpreadsheetEngine.Spreadsheet@,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Set initial attributes of the command.
+            </summary>
+            <param name="spreadsheet">
+            Reference to the spreadsheet.
+            </param>
+            <param name="newValue">
+            New value for a cell.
+            </param>
+            <param name="prevValue">
+            Old value of a cell.
+            </param>
+            <param name="rowNum">
+            Row index.
+            </param>
+            <param name="columnNum">
+            Column index.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.ICommand.GetCommandName">
+            <summary>
+            Gets the name of the command.
+            </summary>
+            <returns>
+            The name of the command.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.ICommand.Execute">
+            <summary>
+            Execution of the command.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.ICommand.UnExecute">
+            <summary>
+            The reverse of the execution of a command.
+            </summary>
+        </member>
+        <member name="T:SpreadsheetEngine.Spreadsheet">
+            <summary>
+            The spreedsheet class.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SpreadsheetEngine.Spreadsheet"/> class.
+            </summary>
+            <param name="rowNum">
+            Number of rows.
+            </param>
+            <param name="columnNum">
+            Number of columns.
+            </param>
+        </member>
+        <member name="E:SpreadsheetEngine.Spreadsheet.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="P:SpreadsheetEngine.Spreadsheet.RowCount">
+            <summary>
+            Gets rowCount.
+            </summary>
+        </member>
+        <member name="P:SpreadsheetEngine.Spreadsheet.ColumnCount">
+            <summary>
+            Gets columnCount.
+            </summary>
+        </member>
+        <member name="P:SpreadsheetEngine.Spreadsheet.CCell">
+            <summary>
+            Sets the CCell value.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.InitializeCellArray(System.Int32,System.Int32)">
+            <summary>
+            Initializes the cell array.
+            </summary>
+            <param name="rowNum">
+            The number of rows.
+            </param>
+            <param name="columnNum">
+            The number of columns.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.CleanCellArray">
+            <summary>
+            Clears the cell array.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.CellPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Called on PropertyChanged signal in a cell.
+            </summary>
+            <param name="sender">
+            The sender object.
+            </param>
+            <param name="e">
+            The event called.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.FindReferencingCells(CptS321.Cell)">
+            <summary>
+            Find and change all cells that reference the changing cell.
+            </summary>
+            <param name="changingCell">
+            The changing cell.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.ChangeCell(System.String,System.Int32,System.Int32)">
+            <summary>
+            Change the text of a cell.
+            </summary>
+            <param name="newText">
+            The new text.
+            </param>
+            <param name="rowIndex">
+            The row index.
+            </param>
+            <param name="columnIndex">
+            The column index.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.ChangeBGColor(System.UInt32,System.Int32,System.Int32)">
+            <summary>
+            Changes the background of a cell.
+            </summary>
+            <param name="newColor">
+            The new color value.
+            </param>
+            <param name="rowIndex">
+            The row index.
+            </param>
+            <param name="columnIndex">
+            The column index.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.FillCells(System.Collections.Generic.Dictionary{System.String,CptS321.NodeConstantNumerical})">
+            <summary>
+            Fills the dictionary with the values from the cells.
+            </summary>
+            <param name="variableDictionary">
+            The expression tree's variable dictionary.
+            </param>
+            <returns>
+            The variable dicitonary filled out.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.CalculateCell(System.String)">
+            <summary>
+            Calculates the value of the cell.
+            </summary>
+            <param name="newText">
+            The equation to be evaluated.
+            </param>
+            <returns>
+            The new text of the cell.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.ParseCellName(System.String)">
+            <summary>
+            Parses through the cell name and returns the representative index.
+            </summary>
+            <param name="cellName">
+            The name of the cell.
+            </param>
+            <returns>
+            A tuple of the cell's coordinates.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.FindCellValue(System.String)">
+            <summary>
+            Find and return the value of the specified cell.
+            </summary>
+            <param name="cellName">
+            The specified cell name.
+            </param>
+            <returns>
+            The value of the cell.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.GetCell(System.Int32,System.Int32)">
+            <summary>
+            Returns the cell at the index.
+            </summary>
+            <param name="rowIndex">
+            The row index.
+            </param>
+            <param name="columnIndex">
+            The column index.
+            </param>
+            <returns>
+            The cell at the indexs.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.SaveXMLFile(System.IO.Stream)">
+            <summary>
+            Saves an XML file to the specified path.
+            </summary>
+            <param name="path">
+            Where to save the file.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.LoadXMLFile(System.IO.Stream)">
+            <summary>
+            Loads an XML file at the specified path.
+            </summary>
+            <param name="path">
+            Where to load the file from.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.UserInput">
+            <summary>
+            Sets userInput to true. Indicates if the user has just inputed a cell value.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.AddUndo(SpreadsheetEngine.ICommand,System.Int32,System.Int32)">
+            <summary>
+            Adds an command to the undo stack.
+            </summary>
+            <param name="command">
+            A command to add.
+            </param>
+            <param name="rowIndex">
+            The row of the changing cell.
+            </param>
+            <param name="columnIndex">
+            The column of the changing cell.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.Undo">
+            <summary>
+            Calls the invoker's undo.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.NextUndoCommand">
+            <summary>
+            Gets what the next undo command is.
+            </summary>
+            <returns>
+            The lable of the next undo command.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.Redo">
+            <summary>
+            Calls the invoker's redo.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.NextRedoCommand">
+            <summary>
+            Gets what the next redo command is.
+            </summary>
+            <returns>
+            The lable of the next redo command.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.Spreadsheet.SubscribeToCells(System.Int32,System.Int32)">
+            <summary>
+            Automatically subscribes to all the cell PropertyChanged signals.
+            </summary>
+            <param name="rowNum">
+            Number of rows.
+            </param>
+            <param name="columnNum">
+            Number of columns.
+            </param>
+        </member>
+        <member name="T:SpreadsheetEngine.SpreadsheetInvoker">
+            <summary>
+            The invoker.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SpreadsheetEngine.SpreadsheetInvoker"/> class.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.GetTopUndoStack">
+            <summary>
+            Gets the top of the undo stack.
+            </summary>
+            <returns>
+            The text of the next command undo.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.GetTopRedoStack">
+            <summary>
+            Gets the top of the redo stack.
+            </summary>
+            <returns>
+            The text of the next command redo.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.ResetStacks">
+            <summary>
+            Resets the undo and redo stacks.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.AddUndo(SpreadsheetEngine.ICommand)">
+            <summary>
+            Adds and undo command.
+            </summary>
+            <param name="command">
+            The command to add.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.Undo">
+            <summary>
+            Pops the top command and UnExecutes it.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.SpreadsheetInvoker.Redo">
+            <summary>
+            Pops the top command and Executes it.
+            </summary>
+        </member>
+        <member name="T:SpreadsheetEngine.TextChangeCommand">
+            <summary>
+            Undo a text change.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.TextChangeCommand.SetAttributes(SpreadsheetEngine.Spreadsheet@,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Set attributes.
+            </summary>
+            <param name="spreadsheet">
+            Reference to the spreadsheet.
+            </param>
+            <param name="newText">
+            New text for the cell.
+            </param>
+            <param name="prevText">
+            Old text of the cell.
+            </param>
+            <param name="rowNum">
+            Row index.
+            </param>
+            <param name="columnNum">
+            Column index.
+            </param>
+        </member>
+        <member name="M:SpreadsheetEngine.TextChangeCommand.GetCommandName">
+            <summary>
+            Gets the command name.
+            </summary>
+            <returns>
+            The command name.
+            </returns>
+        </member>
+        <member name="M:SpreadsheetEngine.TextChangeCommand.Execute">
+            <summary>
+            Executes the change.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngine.TextChangeCommand.UnExecute">
+            <summary>
+            Undos the change.
+            </summary>
+        </member>
+        <member name="T:CptS321.NodeAdditionOperator">
+            <summary>
+            Node of addition operation.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeAdditionOperator.Operator">
+            <summary>
+            Gets Operator.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeAdditionOperator.Precedence">
+            <summary>
+            Gets precedence.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeAdditionOperator.Associativity">
+            <summary>
+            Gets associativity.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeAdditionOperator.Evaluate">
+            <summary>
+            Evaluation of the operation.
+            </summary>
+            <returns>
+            The result of the operation.
+            </returns>
+        </member>
+        <member name="T:CptS321.NodeBinaryOperator">
+            <summary>
+            Node containing a binary operator.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeBinaryOperator.LeftNode">
+            <summary>
+            Gets or sets leftNode.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeBinaryOperator.RightNode">
+            <summary>
+            Gets or sets rightNode.
+            </summary>
+        </member>
+        <member name="T:CptS321.Cell">
+            <summary>
+            Class of a singular, spreadsheet cell.
+            </summary>
+        </member>
+        <member name="F:CptS321.Cell.text">
+            <summary>
+            The text of the cell.
+            </summary>
+        </member>
+        <member name="F:CptS321.Cell.value">
+            <summary>
+            The calculated value of the cell.
+            </summary>
+        </member>
+        <member name="F:CptS321.Cell.BGColor">
+            <summary>
+            The background color value of the cell.
+            </summary>
+        </member>
+        <member name="M:CptS321.Cell.#ctor(System.Int32,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.Cell"/> class.
+            </summary>
+            <param name="newRowIndex">
+            The new row index.
+            </param>
+            <param name="newColumnIndex">
+            The new column index.
+            </param>
+            <param name="newText">
+            The new text.
+            </param>
+        </member>
+        <member name="E:CptS321.Cell.PropertyChanged">
+            <inheritdoc/>
+        </member>
+        <member name="P:CptS321.Cell.RowIndex">
+            <summary>
+            Gets the row index.
+            </summary>
+        </member>
+        <member name="P:CptS321.Cell.ColumnIndex">
+            <summary>
+            Gets the column index.
+            </summary>
+        </member>
+        <member name="P:CptS321.Cell.Text">
+            <summary>
+            Gets or sets the text.
+            </summary>
+        </member>
+        <member name="P:CptS321.Cell.Value">
+            <summary>
+            Gets the value of the cell.
+            </summary>
+        </member>
+        <member name="P:CptS321.Cell.BGColorValue">
+            <summary>
+            Gets or sets the BGColor value.
+            </summary>
+        </member>
+        <member name="T:CptS321.NodeConstantNumerical">
+            <summary>
+            Node containing a constant number.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeConstantNumerical.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.NodeConstantNumerical"/> class.
+            </summary>
+            <param name="newValue">
+            The value to set as the constant.
+            </param>
+        </member>
+        <member name="M:CptS321.NodeConstantNumerical.Evaluate">
+            <summary>
+            Returns the value of the node.
+            </summary>
+            <returns>
+            The node's value.
+            </returns>
+        </member>
+        <member name="T:CptS321.ExpressionTree">
+            <summary>
+            Defines the functionality of expression trees.
+            </summary>
+        </member>
+        <member name="M:CptS321.ExpressionTree.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.ExpressionTree"/> class.
+            </summary>
+            <param name="expression">
+            The expression to be evaluated.
+            </param>
+        </member>
+        <member name="P:CptS321.ExpressionTree.Expression">
+            <summary>
+            Gets the expression of the tree.
+            </summary>
+        </member>
+        <member name="P:CptS321.ExpressionTree.VariableDictionary">
+            <summary>
+            Gets the variable dictionarty and returns it.
+            </summary>
+        </member>
+        <member name="M:CptS321.ExpressionTree.IsExpression(System.String)">
+            <summary>
+            Determines if a cell's value is an expresion.
+            </summary>
+            <param name="cellValue">
+            The cell's value.
+            </param>
+            <returns>
+            If the value is an expression or not.
+            </returns>
+        </member>
+        <member name="M:CptS321.ExpressionTree.ParseExpression(System.String)">
+            <summary>
+            Parses the expression into an array of strings.
+            </summary>
+            <param name="expression">
+            The passed in expression.
+            </param>
+            <returns>
+            An array of strings.
+            </returns>
+        </member>
+        <member name="M:CptS321.ExpressionTree.CountParenthesis(System.String)">
+            <summary>
+            Counts the number of parenthesis in an expression to later be subtracted from the array length.
+            </summary>
+            <param name="expression">
+            The expression entered from the user.
+            </param>
+            <returns>
+            The number of parenthesis in teh expression.
+            </returns>
+        </member>
+        <member name="M:CptS321.ExpressionTree.PostFixConversion(System.String)">
+            <summary>
+            Converts an expression to postfix notation.
+            </summary>
+            <param name="expression">
+            The input expression.
+            </param>
+            <returns>
+            The array of the expression in postfix notation.
+            </returns>
+        </member>
+        <member name="M:CptS321.ExpressionTree.BuildTree(System.String[])">
+            <summary>
+            Builds the expression tree.
+            </summary>
+            <param name="expressionArray">
+            The array of the expression.
+            </param>
+        </member>
+        <member name="M:CptS321.ExpressionTree.SetVariable(System.String,System.Double)">
+            <summary>
+            Set varaibles.
+            </summary>
+            <param name="variableName">
+            The name of the variable.
+            </param>
+            <param name="variableValue">
+            The value of the variable.
+            </param>
+        </member>
+        <member name="M:CptS321.ExpressionTree.FillVariables(System.Collections.Generic.Dictionary{System.String,CptS321.NodeConstantNumerical})">
+            <summary>
+            Sets all the variables with another dictionaries values.
+            </summary>
+            <param name="newVariables">
+            The dictionary containing the new variable's values.
+            </param>
+        </member>
+        <member name="M:CptS321.ExpressionTree.Evaluate">
+            <summary>
+            Evaluate the expression.
+            </summary>
+            <returns>
+            The result of the expression.
+            </returns>
+        </member>
+        <member name="T:CptS321.NodeBase">
+            <summary>
+            The base for all node types.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeBase.Evaluate">
+            <summary>
+            Abstract delcaration of Evalutate, to be defined in derived classes.
+            </summary>
+            <returns>
+            The evaluation.
+            </returns>
+        </member>
+        <member name="T:CptS321.NodeDivisionOperator">
+            <summary>
+            Node of division operation.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeDivisionOperator.Operator">
+            <summary>
+            Gets Operator.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeDivisionOperator.Precedence">
+            <summary>
+            Gets precedence.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeDivisionOperator.Associativity">
+            <summary>
+            Gets associativity.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeDivisionOperator.Evaluate">
+            <summary>
+            Evaluation of the operation.
+            </summary>
+            <returns>
+            The result of the operation.
+            </returns>
+        </member>
+        <member name="T:CptS321.NodeMultiplicationOperator">
+            <summary>
+            Node of multiplication operation.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeMultiplicationOperator.Operator">
+            <summary>
+            Gets Operator.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeMultiplicationOperator.Precedence">
+            <summary>
+            Gets precedence.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeMultiplicationOperator.Associativity">
+            <summary>
+            Gets associativity.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeMultiplicationOperator.Evaluate">
+            <summary>
+            Evaluation of the operation.
+            </summary>
+            <returns>
+            The result of the operation.
+            </returns>
+        </member>
+        <member name="T:CptS321.NodeOperatorFactory">
+            <summary>
+            Creates operator nodes.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.NodeOperatorFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.CreateOperatorNode(System.String)">
+            <summary>
+            Operator function.
+            </summary>
+            <param name="newOperation">
+            The operation type of the new node.
+            </param>
+            <returns>
+            The new operator node.
+            </returns>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.GetPrecedence(System.String)">
+            <summary>
+            Gets the precedence of an operator.
+            </summary>
+            <param name="operation">
+            An operation.
+            </param>
+            <returns>
+            The precedence.
+            </returns>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.GetAssociativity(System.String)">
+            <summary>
+            Gets the associativity of an operator.
+            </summary>
+            <param name="operation">
+            An operator.
+            </param>
+            <returns>
+            The associativity of an operator.
+            </returns>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.ValidOperator(System.String)">
+            <summary>
+            Determines if an operation is valid for this tree.
+            </summary>
+            <param name="operation">
+            The operation.
+            </param>
+            <returns>
+            Whether that operation is valid or not.
+            </returns>
+        </member>
+        <member name="M:CptS321.NodeOperatorFactory.TraverseOperators(CptS321.NodeOperatorFactory.OnOperator)">
+            <summary>
+            Finds all the supported operators from subclasses.
+            </summary>
+            <param name="onOperator">
+            The on operator.
+            </param>
+        </member>
+        <member name="T:CptS321.NodeSubtractionOperator">
+            <summary>
+            Node of Subtraction operation.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeSubtractionOperator.Operator">
+            <summary>
+            Gets Operator.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeSubtractionOperator.Precedence">
+            <summary>
+            Gets precedence.
+            </summary>
+        </member>
+        <member name="P:CptS321.NodeSubtractionOperator.Associativity">
+            <summary>
+            Gets associativity.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeSubtractionOperator.Evaluate">
+            <summary>
+            Evaluation of the operation.
+            </summary>
+            <returns>
+            The result of the operation.
+            </returns>
+        </member>
+        <member name="T:CptS321.SpreadsheetCell">
+            <summary>
+            Inherits Cell.
+            </summary>
+        </member>
+        <member name="M:CptS321.SpreadsheetCell.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.SpreadsheetCell"/> class.
+            </summary>
+            <param name="newText">
+            The new text of the cell.
+            </param>
+            <param name="newRowInt">
+            The row index.
+            </param>
+            <param name="newColumnInt">
+            The column index.
+            </param>
+        </member>
+        <member name="M:CptS321.SpreadsheetCell.SetValue(System.String)">
+            <summary>
+            Sets the value of the cell.
+            </summary>
+            <param name="newValue">
+            The new value for the cell.
+            </param>
+        </member>
+        <member name="T:CptS321.NodeVariable">
+            <summary>
+            Node containing a variable value.
+            </summary>
+        </member>
+        <member name="M:CptS321.NodeVariable.#ctor(System.String,System.Collections.Generic.Dictionary{System.String,CptS321.NodeConstantNumerical}@)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CptS321.NodeVariable"/> class.
+            </summary>
+            <param name="newName">
+            The name of the variable.
+            </param>
+            <param name="newValue">
+            The value of the variable.
+            </param>
+        </member>
+        <member name="M:CptS321.NodeVariable.Evaluate">
+            <summary>
+            Returns the value of the node.
+            </summary>
+            <returns>
+            The value of the node.
+            </returns>
+        </member>
+    </members>
+</doc>

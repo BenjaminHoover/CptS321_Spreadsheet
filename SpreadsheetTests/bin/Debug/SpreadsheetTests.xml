@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SpreadsheetTests</name>
+    </assembly>
+    <members>
+        <member name="T:SpreadsheetTests.ExpressionTreeTests">
+            <summary>
+            Tests for the ExpressionTree class.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.NormalIsExpressionTestTrueSpaces">
+            <summary>
+            Normal test of IsExpression method that is an expression with spaces.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.NormalIsExpressionTestTrueNoSpaces">
+            <summary>
+            Normal test of IsExpression method that is an expression without spaces.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.NormalIsExpressionTestFalse">
+            <summary>
+            Normal test of IsExpression method that is not an expression.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ParseExpressionSingleOperator">
+            <summary>
+            Normal test of parsing an expression with a single operator.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ParseExpressionMultipleOperators">
+            <summary>
+            Normal test of parsing an expression with multiple operators.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ParseExpressionNoOperator">
+            <summary>
+            Fringe test of parsing an expression with no operators.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.PostFixConversionSingleOperator">
+            <summary>
+            Normal test of converting an expression with a single operator.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.PostFixConversionMultipleOperators">
+            <summary>
+            Normal test of converting an expression with multiple operators.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.PostFixConversionNoOperator">
+            <summary>
+            Fringe test of converting an expression with no operators.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalAdditionNumbers">
+            <summary>
+            Normal test of adding two numbers together without using variables.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalAddition">
+            <summary>
+            Normal test of adding two numbers together.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalDoubleAddition">
+            <summary>
+            Normal test of adding three numbers together.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalSubtraction">
+            <summary>
+            Normal test of subtracting two numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalDoubleSubtraction">
+            <summary>
+            Normal test of subtracting three numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalMultiplication">
+            <summary>
+            Normal test of multiply two numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalDoubleMultiplication">
+            <summary>
+            Normal test of multiply three numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalDivision">
+            <summary>
+            Normal test of dividing two numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalDoubleDivision">
+            <summary>
+            Normal test of dividing three numbers.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionFringeMultipleOperators">
+            <summary>
+            Fringe test of multiple operator types.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionFringeIncomplete">
+            <summary>
+            Fringe test of an incomplete expression.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionFringeSingularVariable">
+            <summary>
+            Fringe test of singular variable expression.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalParenthesisOuter">
+            <summary>
+            Normal test of adding two numbers together within parenthesis.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalParenthesisInner">
+            <summary>
+            Normal test of adding two numbers together within parenthesis and another outside.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalParenthesisMultiple">
+            <summary>
+            Normal test of evaluting an expression with multiple parenthesis.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionFringeParenthesisExcessive">
+            <summary>
+            Normal test of evaluting an expression with an excessive amount of parenthesis.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetTests.ExpressionTreeTests.ExpressionNormalPrecedence">
+            <summary>
+            Normal test of evaluting an expression with precedence without parenthesis.
+            </summary>
+        </member>
+        <member name="T:SpreadsheetEngineTests.SpreadsheetTests">
+            <summary>
+            The tests for the SpreadSheet class.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.SetUp">
+            <summary>
+            Setup function as required by NUnit.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalSaveFileCreated">
+            <summary>
+            Normal test of determing if an xml file was created at location.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalSaveFileContents">
+            <summary>
+            Normal test of determing if the spreadsheet was correctly saved with random data.
+            Normal format.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalLoadFileSingleCell">
+            <summary>
+            Normal test of determing if an xml file with expected contents was correctly loaded.
+            Single cell.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalLoadFileMultipleCells">
+            <summary>
+            Normal test of determing if an xml file with expected contents was correctly loaded.
+            Multiple cells.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.FringeLoadFile">
+            <summary>
+            Fringe test of determing if an xml file with unexpected contents was correctly loaded.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.ChangeCellTextNormal">
+            <summary>
+            Test changing the text of a cell in the middle.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.ChangeCellTextFringeFirstCell">
+            <summary>
+            Test changing the text of the firts cell, a:1.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.ChangeCellTextFringeLastCell">
+            <summary>
+            Test changing the text of the last cell, z:50.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalNoExpression">
+            <summary>
+            Test changing the text of a cell in the middle that needs to be calculated but doesn't use a expression.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalEmptyCell">
+            <summary>
+            Test changing the text of a cell in the middle that needs to be calculated from an empty cell.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalFindReferencingCellsSingleCell">
+            <summary>
+            Normal test of changing the value of a cell when a cell it referenced changes.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalFindReferencingCellsCalculated">
+            <summary>
+            Normal test of changing the value of a cell when two cells it references in an expression change.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalExpressionSingleRef">
+            <summary>
+            Test changing the text of a cell in the middle that needs to be calculated and uses a expression with one ref.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalExpressionMultipleRef">
+            <summary>
+            Test changing the text of a cell in the middle that needs to be calculated and uses a expression with two refs.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalExpressionBadRef">
+            <summary>
+            Test changing the text of a cell in the middle that needs to be calculated and uses a expression with a null ref.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellFringeBadAddress">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from a cell that doesn't exist.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellFringeBadAddressComplicated">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from a cell that doesn't exist, a more complicated example.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellFringeSelfReference">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from itself.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellFringeSelfReferenceComplicated">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from itself, more complicated example.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellFringeSelfReferenceIndirect">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from itself indirectly.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.CalculateCellNormalBase">
+            <summary>
+            Test changing the text of a cell that needs to be calculated from itself.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalColorChangeFromDefault">
+            <summary>
+            Normal test of changing the color of a cell from default.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalUndoSingleText">
+            <summary>
+            Normal test of undoing a single text input.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalUndoMultipleText">
+            <summary>
+            Normal test of undoing multiple text inputs.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalUndoMultipleCalculation">
+            <summary>
+            Normal test of undoing multiple inputs that have other cells using them in calculations.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalUndoColor">
+            <summary>
+            Normal test of undoing cell background color changes.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalRedoSingleText">
+            <summary>
+            Normal test of redoing a single text input.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalRedoMultipleText">
+            <summary>
+            Normal test of redoing multiple text inputs.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalRedoMultipleCalculation">
+            <summary>
+            Normal test of undoing multiple inputs that have other cells using them in calculations.
+            </summary>
+        </member>
+        <member name="M:SpreadsheetEngineTests.SpreadsheetTests.NormalRedoColor">
+            <summary>
+            Normal test of undoing cell background color changes.
+            </summary>
+        </member>
+    </members>
+</doc>
